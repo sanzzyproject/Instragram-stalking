@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom base styles for body to ensure background consistency outside React root if needed */
+html, body {
+  background-color: #1A1A1A; /* Hitam Muda */
+  color: #F5F5DC; /* Putih Tulang */
+}
+
+/* Scrollbar customization for modern look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
